@@ -1,0 +1,258 @@
+@font-face{
+    font-family: 'myFont';
+    src:url(font/NothingYouCouldDo-Regular.ttf);
+}
+@font-face {
+    font-family: 'myFont1';
+    src: url(font/Neuton-Bold.ttf);
+}
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+#home{
+    height: 100vh;
+    background-image: url(assests/bg.jpg);
+    background-position: center;
+    display: absolute;
+    background-size: cover;
+    width: 100%;
+    box-shadow: 0px 0px 20px black;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+}
+nav{
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(0, 0,0, 0.5);
+    box-shadow: 5px 5px 20px black;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    border-radius: 5px;
+
+}
+nav .menu{
+    text-align: right;
+    justify-content: space-evenly;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: px;
+    transition: 0.5s;
+    margin: 3px;
+    display: inline-block;
+    text-align: center;
+    font-family: 'myFont1', sans-serif;
+}
+
+.menu ul{
+    display: inline-flex;
+    color: transparent;
+    margin: 15px;
+}
+.menu ul li .active{
+    color: tomato;
+    border-bottom: 5px solid tomato;
+    width: 100%;
+    transition: 0.3s ease;
+    border-radius: 1px;
+}
+.menu ul li a:hover{
+    background: none;
+    text-shadow: 0px 0px 20px;
+    color: tomato;
+    padding: px;
+}
+a:nth-child(1){
+    width: 80px;
+}
+a:nth-child(2){
+    width: 80px;
+}
+a:nth-child(3){
+    width: 80px;
+}
+a:nth-child(4){
+    width: 80px;
+}
+a:nth-child(5){
+    width: 80px;
+}
+
+
+
+
+/*
+.menu ul li:nth-child(1) a{
+    color: tomato;
+}
+.menu ul li:nth-child(5) a:hover{
+    color: white ;
+}
+.menu ul li:nth-child(5) a{
+    background-color: tomato;
+}
+*/
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 3px;
+    left: 20px;
+    cursor: pointer;
+}
+.logo img{
+    height: 50px;
+    width: 50px;
+}
+.main{
+    color: white;
+    z-index: -1;
+}
+.content1{
+    top: 180px;
+    left: 200px;
+    position: absolute;
+}
+.content1 span{
+    color: tomato;
+    font-family: 'myFont';
+}
+.content1 h3{
+    font-size: 35px;
+    font-family: 'myFont', sans-serif;
+    font-weight: 400;
+}
+.content2{
+    position: absolute;
+    top: 230px;
+    left: 200px;
+}
+.content2 h3{
+    line-height: 0.7em;
+    font-size: 100px;
+    font-style: normal;
+    font-family: 'myFont1', sans-serif;
+}
+.content3{
+    position: absolute;
+    left: 200px;
+    top: 410px;
+}
+.content3 h3{
+    font-size: 45px;
+    font-family: 'myFont', sans-serif;
+    color: white;
+}
+.btn{
+
+    top: 460px;
+    left: 300px;
+    position: absolute;
+    padding: 10px;
+}
+.btn button{
+    padding: 10px;
+    height: 40px;
+    width: 120px;
+    background-color: tomato;
+    color: white;
+    border: none;
+    font-size: 15px;
+    border-radius: 3px;
+    font-family: 'myFont1', sans-serif;
+}
+.btn button:hover{
+    box-shadow: 0px 0px 20px tomato;
+}
+
+
+/*about*/
+
+#about{
+    width: 100%;
+    height: 120vh;
+    padding: 70px 0;
+    box-shadow: 0px 0px 20px white;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+#about .Aus{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#about .image1 img{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0px 5px 10px black;
+}
+
+.content4 h3, .AS1{
+    font-size: 65px;
+    font-family: 'myFont1', sans-serif;
+}
+
+.content4 .AS1{
+    position: relative;
+    color: tomato;
+}
+.content4 p{
+    margin: 10px;
+    width: 650px;
+    text-align: justify;
+    margin-right: 30px;
+    line-height: 22px;
+}
+.cs5{
+    margin-top: 50px;
+    display: flex;
+    position: relative;
+    text-align: center;
+}
+.cs5 h3{
+    color: tomato;
+    font-family: 'myFont1', sans-serif;
+}
+.cs5 p{
+    font-family: 'myFont1', sans-serif;
+}
+.mystyle1{
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0.03);
+    box-shadow: 0px 0px 20px white;
+    margin: 5px;
+}
+
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.9);
+}
+
+::-webkit-scrollbar-thumb{
+    background: tomato;
+    border-radius: 10px;
+}
